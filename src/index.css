@@ -11,3 +11,136 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  --primary-color-1: #495E57;
+  --primary-color-2: #F4CE14;
+  --secondary-color-1: #EE9972;
+  justify-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header header header header header header header header header "
+    "main main main main main main main main main main main main"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+.header{
+  justify-self: center;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 10vh;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: var(--primary-color-1);
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-template-rows: auto;
+}
+
+.footer-logo {
+  width: 100px;
+  align-self: center;
+  justify-self: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  align-self: center;
+}
+
+.hamburger-menu {
+  justify-self: left;
+  align-self: center;
+}
+
+.nav {
+  align-self: center;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.nav-list-item {
+  justify-self: center;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+a {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-family: 'Markazi', serif;
+  font-weight: medium;
+  font-size: 64pt;
+}
+
+h2 {
+  font-family: 'Markazi', serif;
+  font-weight: normal;
+  font-size: 40pt;
+}
+
+h3 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
+  font-size: 20pt;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+h5 {
+  font-family: 'Karla', sans-serif;
+  font-weight: medium;
+  font-size: 18pt;
+}
+
+h6 {
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
+  font-size: 16pt;
+}
+
+
+p {
+  font-family: 'Karla', sans-serif;
+  font-weight: normal;
+  font-size: 16pt;
+  line-height: 1.5;
+}
+
+span {
+  font-family: 'Karla', sans-serif;
+  font-weight: medium;
+  font-size: 16pt;
+  color: var(--secondary-color-1)
+}

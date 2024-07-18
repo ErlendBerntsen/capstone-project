@@ -1,10 +1,12 @@
+import "./index.css"
+
 export const Footer = () => {
     return (
-        <footer>
-            <img src="./logo.png" alt="logo"></img>
+        <footer className="footer">
+            <img src="./logo.png" alt="logo" className="footer-logo"></img>
             <div>
                 <h3>Doormat Navigation</h3>
-                <ul>
+                <ul className="footer-list">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/home">About</a></li>
                     <li><a href="/home">Menu</a></li>
@@ -15,7 +17,7 @@ export const Footer = () => {
             </div>
             <div>
                 <h3>Contact</h3>
-                <ul>
+                <ul className="footer-list">
                     <li>Address</li>
                     <li>Phone Number</li>
                     <li>Email</li>
@@ -24,7 +26,7 @@ export const Footer = () => {
 
             <div>
                 <h3>Social Media Links</h3>
-                <ul>
+                <ul className="footer-list">
                     <li>Address</li>
                     <li>Phone Number</li>
                     <li>Email</li>
