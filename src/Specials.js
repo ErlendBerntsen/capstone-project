@@ -3,7 +3,7 @@ export const Specials = () => {
         <div className="specials-container">
             <div className="specials-header">
                 <h2>This weeks specials!</h2>
-                <a href="/" className="specials-menu-button">Online menu</a>
+                <button className="specials-menu-button"><a href="/">Online menu</a></button>
             </div>
             <p>asdasd</p>
         </div>
