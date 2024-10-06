@@ -7,12 +7,12 @@ export const Footer = () => {
             <div>
                 <h3>Doormat Navigation</h3>
                 <ul className="footer-list">
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/home">About</a></li>
-                    <li><a href="/home">Menu</a></li>
-                    <li><a href="/home">Reservations</a></li>
-                    <li><a href="/home">Order Online</a></li>
-                    <li><a href="/home">Log In</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Menu</a></li>
+                    <li><a href="/booking">Reservations</a></li>
+                    <li><a href="/">Order Online</a></li>
+                    <li><a href="/">Log In</a></li>
                 </ul>
             </div>
             <div>
