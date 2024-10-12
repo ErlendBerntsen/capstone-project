@@ -145,6 +145,8 @@ h6 {
   font-family: 'Karla', sans-serif;
   font-weight: bolder;
   font-size: 16pt;
+  margin-block-start: 1.5em;
+  margin-block-end: 1.5em;
 }
 
 
@@ -256,6 +258,7 @@ img {
   width: min(1250px, 80%);
   align-self: center;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .specials-header {
@@ -264,12 +267,77 @@ img {
   align-items: center;
 }
 
+.specials-title {
+  font-weight: bold;
+}
+
 .specials-menu-button {
   background-color: var(--primary-color-2);
   border-radius: 16px;
   border: 0 none black;
-  height: 50px;
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-left: auto;
+  font-family: 'Karla', sans-serif;
+  font-weight: bolder;
+  font-size: 16pt;
+}
+
+.specials-menu-button:hover {
+  cursor: pointer;
+}
+
+.specials-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 50px;
+  grid-template-rows: auto;
+  width: 100%;
+}
+
+.specials-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.specials-card-image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 100%;
+}
+
+.specials-card-body {
+  background-color: var(--secondary-color-3);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.specials-card-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.specials-card-name {
+  font-weight: 900;
+}
+
+.specials-card-price {
+  color: var(--secondary-color-1);
+  margin-left: auto;
+}
+
+.specials-card-description {
+  min-height: 250px;
+}
+
+.specials-card-button{
+  font-weight: 900;
+}
+
+.specials-card-button:hover {
+  cursor: pointer;
 }
