@@ -396,3 +396,53 @@ img {
 .review-profile-name {
   margin-left: 1rem;
 }
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  width: min(1250px, 80%);
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.description-text {
+  width: 50%;
+}
+
+.description-text-title {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.description-text-subtitle {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.description-images {
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.description-image-a {
+  width: 300px;
+  border-radius: 16px;
+  left: 50px;
+  top: 50px;
+  position: relative;
+}
+
+.description-image-b {
+  width: 300px;
+  z-index: -1;
+  border-radius: 16px;
+  position: absolute;
+}
