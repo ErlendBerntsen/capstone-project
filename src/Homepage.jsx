@@ -5,7 +5,7 @@ import { Description } from "./Description";
 
 export const HomePage = () => {
     return (
-        <div className="homepage-container">
+        <div className="page-container">
             <Hero></Hero>
             <Specials></Specials>
             <Testimonials></Testimonials>

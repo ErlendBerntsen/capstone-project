@@ -13,7 +13,7 @@ code {
 }
 
 .container {
-  --primary-color-1: #495E57;
+  --primary-color-1: #495e57;
   --primary-color-2: #F4CE14;
   --secondary-color-1: #EE9972;
   --secondary-color-2: #FBDABB;
@@ -164,25 +164,7 @@ span {
   color: var(--secondary-color-1)
 }
 
-/*
-TODO Check module 2 Exercise: Styling elements
-ul {
-
-}
-
-nav {
-
-}
-
-li {
-
-}
-
-img {
-}
-*/
-
-.homepage-container {
+.page-container {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -445,4 +427,159 @@ img {
   z-index: -1;
   border-radius: 16px;
   position: absolute;
+}
+
+.bookingpage-header-container {
+  width: 100%;
+  background-color: var(--primary-color-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bookingpage-header{
+  display: flex;
+  flex-direction: column;
+  width: min(1250px, 80%);
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.bookingpage-title {
+  color: var(--primary-color-2);
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.bookingpage-image {
+  width: 75%;
+  border-radius: 16px;
+}
+
+.bookingpage-form {
+  display: flex;
+  flex-direction: column;
+  width: min(1250px, 80%);
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.bookingpage-form-title {
+  color: var(--primary-color-1);
+  font-weight: bold;
+  margin-block-end: 1rem;
+
+}
+
+.bookingpage-form-subtitle {
+  color: var(--primary-color-1);
+  font-weight: bold;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.bookingpage-form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bookingpage-form-select {
+  background-color: var(--secondary-color-3);
+  color: var(--primary-color-1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 45%;
+  font-size: 14pt;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 8px;
+  margin-bottom: 5rem;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("../public/chevron-down.svg")  no-repeat 96%;
+  background-size: 5%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: var(--primary-color-1) 1px solid;
+}
+
+
+.bookingpage-form-seating {
+  width: 25%;
+}
+
+input[type='radio'] {
+  accent-color: var(--primary-color-1);
+}
+
+input[type='radio']:focus {
+  outline: none;
+}
+
+
+.bookingpage-form-text {
+  width: 45%;
+  margin-bottom: 1rem;
+}
+
+.bookingpage-form-label{
+  font-family: 'Markazi', serif;
+  font-weight: normal;
+  font-size: 16pt;
+  color: var(--primary-color-1);
+  padding-left: 0.25rem;
+}
+
+
+.bookingpage-form-text-input {
+  background-color: var(--secondary-color-3);
+  color: var(--primary-color-1);
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 16px;
+  border: var(--primary-color-1) 1px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+
+.bookingpage-form-textarea {
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.bookingpage-form-button {
+  background-color: var(--primary-color-2);
+  color: var(--primary-color-1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 16px;
+  border-width: 0;
+  font-size: 20pt;
+  font-weight: bold;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.bookingpage-form-button:hover {
+  cursor: pointer;
 }
