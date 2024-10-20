@@ -4,14 +4,15 @@ import { HomePage } from "./Homepage";
 import { BookingPage } from "./BookingPage";
 import { useReducer } from "react";
 
+export const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
+
+export const updateTimes = (state, action) => {
+    return state;
+}
+
 export const Main = () => {
-    const initializeTimes = () => ["17:00", "18:00", "19:00", "20:00", "21:00", "22:00"];
 
-    const updateTimes = (state, action) => {
-        return initializeTimes();
-    }
     const [availableTimes, setAvailableTimes] = useReducer(updateTimes, initializeTimes());
-
 
     return (
         <main className="main">
