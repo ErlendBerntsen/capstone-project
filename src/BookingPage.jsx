@@ -1,6 +1,6 @@
 import { BookingForm } from "./BookingForm"
 
-export const BookingPage = () => {
+export const BookingPage = ({availableTimes, setAvailableTimes}) => {
     return (
         <div className="page-container">
             <div className="bookingpage-header-container">
@@ -9,7 +9,7 @@ export const BookingPage = () => {
                     <img src="./restaurant.png" alt="restaurant" className="bookingpage-image"></img>
                 </div>
             </div>
-            <BookingForm></BookingForm>
+            <BookingForm availableTimes={availableTimes} setAvailableTimes={setAvailableTimes}></BookingForm>
         </div>
     )
 }
