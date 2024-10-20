@@ -1,6 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-export const BookingForm = ({availableTimes, setAvailableTimes}) => {
+export const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => {
     const [formData, setFormData] = useState({
         date: new Date(),
         time: "17:00",
@@ -14,18 +15,21 @@ export const BookingForm = ({availableTimes, setAvailableTimes}) => {
         request: ""
     });
 
+    const navigate = useNavigate();
+
     const handleFormChange = (event, input) => {
         const copy = {...formData};
         copy[input] = event.target.value;
-        if(input === "time"){
+        if(input === "date"){
             setAvailableTimes(copy.date)
         }
         setFormData(copy);
     }
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(formData);
+        if (submitForm(event)){
+            navigate("/confirmation");
+        };
     }
 
     return (
@@ -40,7 +44,7 @@ export const BookingForm = ({availableTimes, setAvailableTimes}) => {
                     <div className="bookingpage-form-col">
                         <label htmlFor="reservation-time" className="bookingpage-form-label">Choose time</label>
                         <select id="reservation-time" onChange={(e) => handleFormChange(e, "time")} className="bookingpage-form-select">
-                            {availableTimes.map(x => <option>{x}</option>)}
+                            {availableTimes.map(x => <option key={x}>{x}</option>)}
                     </select>
                     </div>
                 </div>
@@ -101,7 +105,7 @@ export const BookingForm = ({availableTimes, setAvailableTimes}) => {
                     </div>
                 </div>
             </div>
-            <input type="submit" className="bookingpage-form-button" value="Make you reservation"></input>
+            <input type="submit" className="bookingpage-form-button" value="Make your reservation"></input>
         </form>
     );
 }

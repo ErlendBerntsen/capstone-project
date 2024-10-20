@@ -596,3 +596,7 @@ textarea {
 .bookingpage-form-button:hover {
   cursor: pointer;
 }
+
+.confirmation {
+  align-self: center;
+}
