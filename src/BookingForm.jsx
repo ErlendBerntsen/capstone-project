@@ -54,7 +54,7 @@ export const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => 
 
     return (
         <form id="bookingpage-form" className="bookingpage-form" onSubmit={handleSubmit}>
-            <div className="bookingpage-details">
+            <section className="bookingpage-details">
                 <h2 className="bookingpage-form-title">Details</h2>
                 <div className="bookingpage-form-row">
                     <div className="bookingpage-form-col">
@@ -65,7 +65,7 @@ export const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => 
                         <label htmlFor="reservation-time" className="bookingpage-form-label">Choose time *</label>
                         <select id="reservation-time" onChange={(e) => handleFormChange(e, "time")} className="bookingpage-form-select" required>
                             {timeOptions().map(x => <option key={x}>{x}</option>)}
-                    </select>
+                        </select>
                     </div>
                 </div>
                 <div className="bookingpage-form-row">
@@ -95,8 +95,8 @@ export const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => 
                         <input type="radio" id="outside" name="seating" value="outside" checked={formData.seating === 'outside'} onChange={(e) => handleFormChange(e, "seating")}></input>
                     </div>
                 </div>
-            </div>
-            <div className="bookingpage-information">
+            </section>
+            <section className="bookingpage-information">
                 <h2 className="bookingpage-form-title">Information</h2>
                 <div className="bookingpage-form-row">
                     <div className="bookingpage-form-col">
@@ -124,8 +124,8 @@ export const BookingForm = ({availableTimes, setAvailableTimes, submitForm}) => 
                         <textarea  id="request" rows={10} className="bookingpage-form-text-input" onChange={(e) => handleFormChange(e, "request")}></textarea>
                     </div>
                 </div>
-            </div>
-            <input type="submit" className="bookingpage-form-button" value="Make your reservation" disabled={!isTimeValid(formData.time)}></input>
+            </section>
+            <input type="submit" className="bookingpage-form-button" value="Make your reservation" disabled={!isTimeValid(formData.time)} aria-label="Make you reservation"></input>
         </form>
     );
 }

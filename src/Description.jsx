@@ -1,7 +1,7 @@
 export const Description = () => {
     return (
         <div className="description-container">
-            <div className="description">
+            <section className="description">
                 <div className="description-text">
                     <h1 className="description-text-title">Little Lemon</h1>
                     <h2 className="description-text-subtitle">Chicago</h2>
@@ -12,7 +12,7 @@ export const Description = () => {
                     <img src="./mario and adrian a.png" className="description-image-a" alt="Mario and Adrian talking"></img>
                     <img src="./mario and adrian b.png" className="description-image-b" alt="Mario and Adrian laughing"></img>
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

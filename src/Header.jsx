@@ -25,13 +25,13 @@ export const Header = () => {
         <header className="header">
             {isSmallScreen ?
                 <>
-                <img src="./hamburger-menu-icon.svg" alt="menu" className='hamburger-menu'></img>
-                <img src="./Logo.svg" alt="logo" className="logo"></img>
+                    <img src="./hamburger-menu-icon.svg" alt="menu" className='hamburger-menu'></img>
+                    <img src="./Logo.svg" alt="logo" className="logo"></img>
                 </>
             :
                 <>
-                <img src="./Logo.svg" alt="logo" className="logo"></img>
-                <Nav></Nav>
+                    <img src="./Logo.svg" alt="logo" className="logo"></img>
+                    <Nav></Nav>
                 </>
             }
         </header>

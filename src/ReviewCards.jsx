@@ -21,7 +21,7 @@ export const ReviewCard = ({rating, imgsrc, name, review}) => {
             <h5 className="review-title">Rating</h5>
             <div>{getStars()}</div>
             <div className="review-profile">
-                <img src={imgsrc} className="review-profile-image" alt="profile"></img>
+                <img src={imgsrc} className="review-profile-image" alt="reviewer profile"></img>
                 <h6 className="review-profile-name">{name}</h6>
             </div>
             <p className="review-text">{review}</p>
