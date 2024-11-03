@@ -519,7 +519,7 @@ textarea:focus {
 
 
 .bookingpage-form-seating {
-  width: 15%;
+  width: 18%;
 }
 
 input[type='radio'] {
@@ -530,6 +530,9 @@ input[type='radio']:focus {
   outline: none;
 }
 
+input:focus:invalid {
+  border: 1px solid red;
+}
 
 .bookingpage-form-col {
   display: flex;
@@ -595,6 +598,11 @@ textarea {
 
 .bookingpage-form-button:hover {
   cursor: pointer;
+}
+
+.bookingpage-form-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .confirmation {
